@@ -7,6 +7,6 @@ int main ()
   struct tm* current_time; //struct tm: A structure that holds date abd time broken down into components(year, month, day, hour, minute, second etc.)
   s = time(NULL); //time in seconds
   current_time = localtime(&s); //to get current time
-  printf("%02d : %02d : %02d", current_time->tm_hour, current_time->tm_min, current_time->tm_sec);
+  printf("%02d : %02d : %02d", current_time->tm_hour, current_time->tm_min, current_time->tm_sec); //print time in minutes, hours and seconds
   return 0;
 }
